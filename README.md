@@ -1,4 +1,4 @@
-# work_order.github.io
+# work_order
 
 I built a work order during my internship at ADRDE Agra, the technolgy which were used in this are:-
 - HTML
