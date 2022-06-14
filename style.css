@@ -42,7 +42,8 @@ h1{
    
   }
   body{
-    background-color: rgb(232, 230, 239);
+    background-color: #F7E9D7;
+    font-size: large;
   }
 
 fieldset{
@@ -51,5 +52,10 @@ fieldset{
 
 .right{
   text-align: right;
+}
+
+.button{
+  margin-left: 20%;
+  cursor:cell;
 }
 
