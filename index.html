@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    
+    <title>Work Order</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Order</title>
     <link rel="stylesheet" href="style.css">
     
 </head>
@@ -16,43 +18,63 @@
     <div class="Container">
         
     <div class="column">
-        <p>Wo.No:&nbsp;&nbsp; ADRDE/QMS/PG&nbsp; <input type="text"></p>
-    <p >Date:&nbsp;&nbsp;
-        <script class="script"> document.write(new Date().toLocaleDateString()); </script>
-        </p>
-    <p>Authority:&nbsp;&nbsp; <input type="text"></p>
-    
+       <label >Wo.No:&nbsp;&nbsp; ADRDE/QMS/PG&nbsp;</label>  
+       <input type="text">
+       <br>
+       <br>
+     <label>Date:&nbsp;&nbsp;</label>
+     <input type="date"> 
+     <br>
+     <br>  
+    <label> Authority:&nbsp;&nbsp;</label>
+    <input type="text">
+    <br>
+    <br>
         
       <label for="category">Priority-Category: &nbsp;&nbsp;</label>
       <select name="category1" id="category1">
+        <option value="#">--Select an option</option>
         <option value="Manufacture">Manufacture</option>
       </select>
     
       &nbsp;&nbsp;
       <select name="category" id="category">
+        <option value="">--Select an option</option>
         <option value="volvo">Repair</option>
         <option value="saab">Deposit Repair</option>
         <option value="mercedes">Payment</option>
       </select>
-  
+      <br>
+    <br>
+      <label for="">W.O. Placed by</label>
+      <input type="text">
 
     </div>
 
     <div class="column2">
        
-    <p>I.A.F.O-1870 </p>
-    <p>Unit/Pas&nbsp;&nbsp; <input type="text"></p>
-    <p><label for="Sub">Sub: &nbsp;&nbsp;</label>
+    <P>I.A.F.O-1870</P>
+    <P>Station: &nbsp;&nbsp; AGRA CANTT </P> 
+    <P>Unit:  &nbsp;&nbsp; ADRDE</P>
+  
+    
+    
+    <label for="">Unit/Pas&nbsp;&nbsp; </label> <input type="text">
+    <br>
+    <br>
+    <label for="Sub">Sub: &nbsp;&nbsp;</label>
+    
         <select name="category3" id="category1">
+          <option value="">--Select an option</option>
           <option value="Deposit">Deposit</option>
           <option value="Park">Park</option>
           <option value="Group">Group</option>
           <option value="Branch">Branch</option>
         </select></p>
 
-        <p>Station&nbsp;&nbsp; <input type="text"></p>
-        <p>Unit&nbsp;&nbsp; <input type="text" name="unit" id="unit"></p>
-        <p>W.O Placed on&nbsp;&nbsp; <input type="date"></p>
+      
+      
+      <label for="">W.O Placed on&nbsp;&nbsp;</label>  <input type="date">
    
 </div> 
       </div>
@@ -69,16 +91,21 @@
         </tr>
         <tr>
             <td class="td"><input type="text"></td>
+            <td><textarea name="" id="" cols="25" rows="3"></textarea></td>
             <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
+            <td><select name="" id="">
+              <option value="">--Select an option</option>
+              <option value="Repair">Repair</option>
+              <option value="Stiching">Stiching</option>
+              <option value="Jain repair">Jain Repair</option>
+            </select></td>
             <td><textarea name="textarea1" id="" cols="20" rows="2"></textarea>
-                <form action="/action_page.php"><p></p> 
+                <form action="/action_page.php"><br>
                   <input type="file" id="myFile" name="filename">
                     <input type="submit">
                   </form>
             </td>
-            
+           <!-- 
           </tr>
           <tr>
             <td class="td"><input type="text"></td>
@@ -118,12 +145,12 @@
                   </form></td>
             
           </tr>
-        
+        --> 
       </table>
     </div>
     <hr>
     <p>If Payment Charge to:-</p>
-    <table border="1" cellspacing="0" cellpadding="1">
+    <table border="1" cellspacing="4" cellpadding="4">
         <tr class="row">
           <th>Initiated by</th>
           <th>Counter Signature</th>
@@ -131,22 +158,38 @@
          
         </tr>
         <tr>
-            <td><textarea name="textarea1" id="" cols="30" rows="2"></textarea></td>
-            <td><textarea name="textarea1" id="" cols="30" rows="2"></textarea></td>
-            <td><textarea name="textarea1" id="" cols="30" rows="2"></textarea></td>
+            <td>
+              <select name="" id="">
+                <option value="">--Select an option</option>
+                <option value="vipin kumar verma">Vipin Kumar Verma SCE</option>
+                <option value="Sudhakar Prasad">Sudhakar Prasad SCE</option>
+                <option value="Ravi Krishna SCE">Ravi Krishna SCE</option>
+                <option value="Vineet Kumar Prajapati, To 'B'">Vineet Kumar Prajapati, To 'B'</option>
+                <option value="Rajkumar Paswan, To 'A'">Rajkumar Paswan, To 'A'</option>
+                <option value="Tanmay pachuri, to 'A'">Tanmay pachuri, to 'A'</option>              
+              </select>
+            </td>
+            <td><select name="" id="">
+              <option value="">--Select an option</option>
+              <option value="vipin kumar verma">Vipin Kumar Verma SCE</option>
+              <option value="Sudhakar Prasad">Sudhakar Prasad SCE</option>
+              <option value="KD Diwakar, SCF">KD Diwakar, SCF</option>
+              <option value="Vivek Agrawal, SCF">Vivek Agrawal, SCF</option>
+            </td>
+            <td>
+              <select name="" id="" >
+                <option value="">--Select an option</option>
+                <option value="Akhilesh kashap">Akhilesh kashap SCF</option>
+                <option value="M.S Meena To 'C'">M.S Meena To 'C'</option>
+              </select>
+            
+            </td>
            
             
           </tr>
           <tr>
             <td class="td"> 
-             <label for="sub">I/C Sub</label>
-              <select name="" id="">
-                <option value="Deposit">Deposit</option>
-                <option value="Park">Park</option>
-                <option value="Group">Group</option>
-                <option value="Branch">Branch</option>
-              </select>
-              
+             <label>I/C sub- Depot/Park/Group/Branch</label>             
             </td>
             <td>Comdt/DY.COMDT/OC.Unit</td>
             <td>Comdt/OC/ Workshops</td>
@@ -163,6 +206,12 @@
             <div class="left">
                 Particular to gu.fde
           <p><textarea name="" id="" cols="100" rows="10"></textarea></p>
+          <div class="button">
+            <input style="height: 50px; width: 50%; background-color: honeydew;" type="button" value="Submit" onclick="alert(
+               'Success! you successfully submitted all the details'
+                     )">
+          </div>
+          
         </div>
 
         <div class="right">
@@ -176,6 +225,7 @@
         
         </div>
         </div>
+      
     </form>
 </body>
 </html>
